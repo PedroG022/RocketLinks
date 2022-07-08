@@ -5,42 +5,54 @@
 }
 
 html {
-  --color-bg: #EDF2FF;
-  --color-brand: #4263EB;
-  --color-hover: #364FC7;
-  --color-text: #00082F;
+  --color-bg: #edf2ff;
+  --color-brand: #4263eb;
+  --color-hover: #364fc7;
+  --color-text: #00082f;
 }
 
 body.dark-blue {
-  --color-bg: #00082F;
-  --color-brand: #4263EB;
-  --color-hover: #364FC7;
-  --color-text: #EDF2FF;
+  --color-bg: #00082f;
+  --color-brand: #4263eb;
+  --color-hover: #364fc7;
+  --color-text: #edf2ff;
 }
 
 body.pink {
-  --color-bg: #E5E5E5;
-  --color-brand: #D6336C;
-  --color-hover: #A61E4D;
-  --color-text: #1F000B;
+  --color-bg: #e5e5e5;
+  --color-brand: #d6336c;
+  --color-hover: #a61e4d;
+  --color-text: #1f000b;
 }
 
 body.dark-pink {
-  --color-bg: #1F000B;
-  --color-brand: #D6336C;
-  --color-hover: #A61E4D;
-  --color-text: #FFF0F6;
+  --color-bg: #1f000b;
+  --color-brand: #d6336c;
+  --color-hover: #a61e4d;
+  --color-text: #fff0f6;
 }
 
-body.red {
-  --color-brand: #f44336;
-  --color-hover: #ba000d;
+body.purple {
+  --color-brand: #512da8;
+  --color-hover: #140078;
+}
+
+div.widget {
+  width: 40px;
+  height: 40px;
+  margin-left: 80vw;
+  margin-top: 1vw;
 }
 
 body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: 'Roboto', sans-serif;
+
+  /* The transition property works on the attribute
+  we assign it. In this case, we want the
+  background color to be changed smoothly */
+  transition: background 400ms;
 }
 
 .container {
@@ -58,7 +70,7 @@ img.avatar {
   width: 100px;
   height: 100px;
   padding: 3.7px;
-  border: var(--color-brand) solid 4px ;
+  border: var(--color-brand) solid 4px;
 }
 
 h1 {
@@ -100,6 +112,14 @@ ul li a {
 
 ul li a:hover {
   background: var(--color-hover);
+}
+
+.widget path {
+  stroke: black;
+}
+
+.widget.dark path {
+  stroke: white;
 }
 
 footer {
