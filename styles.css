@@ -32,6 +32,11 @@ body.dark-pink {
   --color-text: #FFF0F6;
 }
 
+body.red {
+  --color-brand: #f44336;
+  --color-hover: #ba000d;
+}
+
 body {
   background: var(--color-bg);
   color: var(--color-text);
