@@ -2,10 +2,10 @@ let pos = -1
 
 function changeColors() {
   // Available colors
-  let colors = ['red', 'pink', 'dark-blue', 'dark-pink']
+  let colors = ['pink', 'green', 'dark-blue', 'dark-pink']
 
   // Cycles the colors
-  if (pos == 3) pos = 0
+  if (pos == colors.length - 1) pos = 0
   else pos++
 
   // Removes every class from the body
